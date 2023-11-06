@@ -1,0 +1,42 @@
+{
+    "name": "Internal Cloud Controls Framework",
+    "version": "0.1",
+    "description": "A demo of creating a custom multi-cloud security standard in Cloud One Conformity",
+    "isEnabled": true,
+    "type": "DRAFT",
+    "controls": [
+        {
+            "aid": "CCM-IAM-1",
+            "awsRules": [
+                "IAM-016",
+                "IAM-034"
+            ],
+            "azureRules": [
+                "ActiveDirectory-003"
+            ],
+            "gcpRules": [
+                "CloudIAM-007 "
+            ],
+            "headings": {
+                "level1": "Access Control",
+                "level2": "Account Management",
+                "level3": "User Accounts with access to Cloud Environments must be managed using the CSP-provided Identity and Access Management System (IAM)."
+            },
+            "title": "IAM Policy",
+            "externalUrl": ""
+        },
+        {
+            "aid": "CCM-IAM-2",
+            "awsRules": [],
+            "azureRules": [],
+            "gcpRules": [],
+            "headings": {
+                "level1": "Access Control",
+                "level2": "Account Enforcement",
+                "level3": "User Accounts with access to Cloud Environments must be managed using the CSP-provided Identity and Access Management System (IAM)"
+            },
+            "title": "IAM Policy",
+            "externalUrl": ""
+        }
+    ]
+}
