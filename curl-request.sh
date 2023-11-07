@@ -1,7 +1,12 @@
-{
+#! /bin/bash
+
+curl --location --request POST 'https://conformity.us-1.cloudone.trendmicro.com/api/compliance-standards/custom' \
+--header 'Authorization: ApiKey <yourKeyHere>' \
+--header 'Content-Type: application/vnd.api+json' \
+--data-raw '{
     "data": {
         "name": "Internal Cloud Controls Framework",
-        "version": "v0.1a",
+        "version": "v0.2a",
         "description": "A demo of creating a custom compliance framework using the Cloud One Conformity Custom Compliance API.",
         "isEnabled": true,
         "type": "DRAFT",
@@ -26,4 +31,4 @@
             }
         ]
     }
-}
+}'
