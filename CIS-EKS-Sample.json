@@ -1,0 +1,33 @@
+{
+    "data": {
+        "name": "Mock EKS Report",
+        "version": "v0.1a",
+        "description": "This report provides prescriptive guidance for running Amazon Elastic Kubernetes Service (EKS) limited specifically to some Cloud One Conformity rules currently in operation.",
+        "isEnabled": true,
+        "type": "DRAFT",
+        "controls": [
+            {
+                "aid": "CISEKS211",
+                "awsRules": [
+                    "EKS-003"
+                ],
+                "headings": {
+                    "level1": "Control Plane Configuration",
+                    "level2": "Logging"
+                },
+                "title": "Enable audit logs"
+            },
+            {
+                "aid": "CISEKS542",
+                "awsRules": [
+                    "EKS-001"
+                ],
+                "headings": {
+                    "level1": "Managed Services",
+                    "level2": "Cluster Networking"
+                },
+                "title": "Ensure clusters are created with Private Endpoint Enabled and Public Access Disabled"
+            }
+        ]
+    }
+}

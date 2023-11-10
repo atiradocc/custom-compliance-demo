@@ -1,7 +1,7 @@
 {
     "data": {
         "name": "Internal Cloud Controls Framework",
-        "version": "v0.1a",
+        "version": "v0.3a",
         "description": "A demo of creating a custom compliance framework using the Cloud One Conformity Custom Compliance API.",
         "isEnabled": true,
         "type": "DRAFT",
