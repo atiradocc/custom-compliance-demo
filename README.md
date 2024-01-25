@@ -14,7 +14,7 @@ All modules used are part of the Python Standard Library so no additional instal
 
 All parameters are mandatory:
 
-- region: Specifies the Cloud One service region. It is a required argument and must be one of the specified choices (us-1, in-1, gb-1, jp-1, de-1, au-1, ca-1, sg-1, trend-us-1).
+- region: Specifies the Cloud One service region (us-1, in-1, gb-1, jp-1, de-1, au-1, ca-1, sg-1, trend-us-1).
 
 - apiKey: Requires a Cloud One API Key with administration rights
 
