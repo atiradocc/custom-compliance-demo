@@ -2,6 +2,8 @@
 
 Interacts with the Cloud One Conformity API for creating a custom compliance standard.
 
+See the Cloud One Conformity Custom Compliance documentation at https://cloudone.trendmicro.com/docs/conformity/custom-compliance-standards/
+
 For technical details about the Custom Compliance Standard API see https://cloudone.trendmicro.com/docs/conformity/api-reference/tag/Custom-Compliance-Standards
 
 All modules used are part of the Python Standard Library so no additional installation is needed.
@@ -28,13 +30,13 @@ A custom compliance standard is provided as a JSON file. The script takes care o
 
 To create the custom compliance standard file you will need the following details:
 
-- name: Intended name for the standard, i.e. "Internal Controls Framework"
-- version: Versioning your standard is strongly encouraged
-- description: Describes the intent of the custom compliance standard to the intended audience, i.e. "This standard provides prescritive guidance for configuring and operating cloud services in our environment"
-- controls: A list of security controls that will comprise the custom compliance standard. Each control is specified as follows:
-  - aid: A unique identifier of the control, i.e. An identifier from your own controls framework or as suggested by the issuing body
-  - title: A descriptive name or label for the security control
-  - headings: Provides the hierarchy in which controls will be presented to the audience. You can specify up to 3 levels using the `level1`, `level2` & `level3` properties
+- `name`: Intended name for the standard, i.e. "Internal Controls Framework"
+- `version`: Versioning your standard is strongly encouraged
+- `description`: Describes the intent of the custom compliance standard to the intended audience, i.e. "This standard provides prescritive guidance for configuring and operating cloud services in our environment"
+- `controls`: A list of security controls that will comprise the custom compliance standard. Each control is specified as follows:
+  - `aid`: A unique identifier of the control, i.e. An identifier from your own controls framework or as suggested by the issuing body
+  - `title`: A descriptive name or label for the security control
+  - `headings`: Provides the hierarchy in which controls will be presented to the audience. You can specify up to 3 levels using the `level1`, `level2` & `level3` properties
 
 To provide mappings to Cloud One Conformity rules use the fields:
 
