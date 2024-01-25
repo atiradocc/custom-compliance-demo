@@ -46,16 +46,20 @@ To provide mappings to Cloud One Conformity rules use the fields:
 
 See the JSON below which describes the `Internal Controls Framework v0.1a` provided as an example:
 
-> Internal Controls Framework v0.1
+```
+Internal Controls Framework v0.1
 
-> This framework provides controls for configuring and operating cloud services in our cloud environments
-> 1 Access Control
-> 1.1 Least Privilege
-> 1.1.1: Authorize Access to Security Functions
-> 1.1.2: Review of User Privileges
->
-> 2 Continuous Monitoring
-> 2.1: Automation Support for Monitoring
+This framework provides controls for configuring and operating cloud services in our cloud environments
+1 Access Control
+1.1 Least Privilege
+1.1.1: Authorize Access to Security Functions
+1.1.2: Review of User Privileges
+
+2 Continuous Monitoring
+2.1: Automation Support for Monitoring
+```
+
+Internal Controls Framework v0.1a as a custom compliance file:
 
 ```json
 {
