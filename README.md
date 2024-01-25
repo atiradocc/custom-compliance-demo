@@ -1,10 +1,6 @@
 # custom-compliance-demo
 
-Interacts with the Cloud One Conformity API for creating a custom compliance standard.
-
-See the Cloud One Conformity Custom Compliance documentation at https://cloudone.trendmicro.com/docs/conformity/custom-compliance-standards/
-
-For technical details about the Custom Compliance Standard API see https://cloudone.trendmicro.com/docs/conformity/api-reference/tag/Custom-Compliance-Standards
+This script facilitates interaction with the Cloud One Conformity API to create a custom compliance standard. Refer to the [Cloud One Conformity Custom Compliance documentation](https://cloudone.trendmicro.com/docs/conformity/custom-compliance-standards/) and the Custom [Compliance Standard API documentation](https://cloudone.trendmicro.com/docs/conformity/api-reference/tag/Custom-Compliance-Standards) for technical details.
 
 All modules used are part of the Python Standard Library so no additional installation is needed.
 
@@ -14,11 +10,11 @@ All modules used are part of the Python Standard Library so no additional instal
 
 All parameters are mandatory:
 
-- region: Specifies the Cloud One service region (us-1, in-1, gb-1, jp-1, de-1, au-1, ca-1, sg-1, trend-us-1).
+- `region`: Specifies the Cloud One service region (us-1, in-1, gb-1, jp-1, de-1, au-1, ca-1, sg-1, trend-us-1).
 
-- apiKey: Requires a Cloud One API Key with administration rights
+- `apiKey`: Requires a Cloud One API Key with administration rights
 
-- customStandardFilename: Specifies the filename of the custom compliance standard
+- `customStandardFilename`: Specifies the filename of the custom compliance standard
 
 Additional help can be obtained by using the help switches `-h`, `--h` or `help`:
 
@@ -26,9 +22,7 @@ Additional help can be obtained by using the help switches `-h`, `--h` or `help`
 
 ## designing a custom compliance standard
 
-A custom compliance standard is provided as a JSON file. The script takes care of submitting the file to the API.
-
-To create the custom compliance standard file you will need the following details:
+A custom compliance standard is represented as a JSON file. The script submits this file to the API. To create the custom compliance standard file, you will need the following details:
 
 - `name`: Intended name for the standard, i.e. "Internal Controls Framework"
 - `version`: Versioning your standard is strongly encouraged
@@ -40,9 +34,9 @@ To create the custom compliance standard file you will need the following detail
 
 To provide mappings to Cloud One Conformity rules use the fields:
 
-- `awsRules`: Use only AWS rule identifiers at https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/
-- `azureRules`: Use only Azure rule identifiers at https://www.trendmicro.com/cloudoneconformity/knowledge-base/azure/
-- `gcpRules`: Use only GCP rule identifiers at https://www.trendmicro.com/cloudoneconformity/knowledge-base/gcp/
+- `awsRules`: Use only AWS rule identifiers available at [AWS Rules Knowledge Base](https://www.trendmicro.com/cloudoneconformity/knowledge-base/aws/)
+- `azureRules`: Use only Azure rule identifiers available at [Azure Rules Knowledge Base](https://www.trendmicro.com/cloudoneconformity/knowledge-base/azure/)
+- `gcpRules`: Use only GCP rule identifiers at available [GCP Rules Knowledge Base](https://www.trendmicro.com/cloudoneconformity/knowledge-base/gcp/)
 
 ### design example
 
